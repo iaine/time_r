@@ -1,5 +1,10 @@
 #!/bin/bash
 
+export WORK_DIR=$PWD
+export BUILDDIR="$WORK_DIR/build/r-devel"
+export TOP_SRCDIR="$WORK_DIR/svn/r-devel"
+export PATCHDIR="$WORK_DIR/patches"
+
 start1=$(date +%s)
 
 svn checkout https://svn.r-project.org/R/trunk/ $TOP_SRCDIR
